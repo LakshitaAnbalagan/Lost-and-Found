@@ -2,6 +2,7 @@ services:
   - type: web
     name: lost-and-found
     env: python
+    rootDir: ideathon
     buildCommand: pip install -r requirements.txt
     startCommand: gunicorn app:app
     envVars:
